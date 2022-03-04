@@ -20,7 +20,7 @@
                 .landing-text {
                     padding: 0.5rem;
                     left: auto !important;
-                    top: 0.5rem !important;
+                    top: 1rem !important;
                     width: 70% !important;
                     box-shadow: 0.5rem 0.5rem 0 0 !important;
                 }
@@ -46,9 +46,9 @@
                 }
                 .landing-image {
                     padding: 0.5rem !important;
-                    right: -0.5rem !important;
+                    right: -1rem !important;
                     left: auto !important;
-                    top: -0.5rem !important;
+                    top: -1rem !important;
                     width: 70% !important;
                     box-shadow: 0.5rem 0.5rem 0 0 !important;
                 }
