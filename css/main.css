@@ -1,0 +1,391 @@
+@import url('mobile.css');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-right: 0;
+}
+
+.wrapper {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed 1px red;
+}
+
+
+/* NAV */
+
+nav {
+    position: fixed;
+    z-index: 199;
+    top: 0;
+    left: 0;
+    /* right: 0; */
+    background-color: #A3bcb6;
+    border-bottom: #daded4 1px solid;
+}
+
+.nav {
+    /* padding: 0; */
+}
+
+.email {
+    /* margin: auto 0; */
+    font-weight: bold;
+}
+
+
+/* MAIN */
+
+.main {
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    height: 99vh;
+    width: 100%;
+    background: linear-gradient(178deg, #A3bcb6 70%, #3c403d calc(70% + 2px));
+}
+
+.icons {
+    flex-direction: column;
+    position: absolute;
+    z-index: 99;
+    left: 1rem;
+}
+
+.icons img {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.landing-text {
+    position: relative;
+    left: 1rem;
+    top: -1rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 35%;
+    height: 75%;
+    border-top-left-radius: 50% 75%;
+    background-color: white;
+    box-shadow: 1rem 1rem 0 0;
+    overflow: hidden;
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: #daded4;
+}
+
+.text-area {
+    border-top-left-radius: 50% 75%;
+    justify-content: space-around;
+}
+
+.landing-text h1 {
+    padding-top: 2.5rem;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 0.2;
+    text-transform: uppercase;
+    text-shadow: 0.01rem 0.01rem 0 #56564c;
+    color: #3c403d;
+}
+
+.name {
+    font-size: 4rem;
+}
+
+.angle-bracket {
+    color: #39603d;
+}
+
+.button {
+    font-size: 0.875rem;
+    margin: 0.5rem;
+    padding: 0.4375rem 0.875rem;
+    border-radius: 0.3525rem;
+    border: 1px solid #39603d;
+    color: white;
+    background-color: #39603d;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.button:hover {
+    background-color: white;
+    border-color: 1px solid #39603d;
+    color: #39603d;
+}
+
+.landing-image {
+    position: relative;
+    top: 1rem;
+    left: -1rem;
+    width: 35%;
+    height: 75%;
+    justify-content: center;
+    background-color: white;
+    border-bottom-right-radius: 50% 75%;
+    overflow: hidden;
+    box-shadow: 1em 1em 0 0;
+}
+
+.image-area {
+    flex-direction: row;
+    border-bottom-right-radius: 50% 75%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.landing-image img {
+    height: 100%;
+    width: auto;
+    align-self: flex-end;
+    /* border: dashed 1px red; */
+    background-color: #daded4;
+}
+
+
+/* SERVICES SECTION */
+
+.services {
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+    background: #A3bcb6;
+    /* color: #daded4; */
+    /* background: linear-gradient(182deg, #3c403d 12.5%, white calc(12.5% + 2px) 87.5%, #A3bcb6 calc(87.5% + 2px)); */
+}
+
+.heading h1 {
+    width: auto;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15;
+    border-bottom: #3c403d 0.25rem solid;
+    text-align: center;
+}
+
+.service {
+    flex-direction: column;
+    width: 50%;
+}
+
+.services>.wrapper {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.service-icon img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.service-caption {
+    text-align: center;
+    flex-direction: column;
+}
+
+.service-caption h2 {
+    margin-bottom: 0.5rem
+}
+
+
+/*PROJECTS SECTION */
+
+.projects {
+    flex-direction: column;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    position: relative;
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+    /* background: linear-gradient(179deg, #A3bcb6 20%, white calc(20% + 2px) 85%, #3c403d calc(85% + 2px)); */
+    background: #daded4;
+    /* color: #daded4; */
+}
+
+.projects>.wrapper {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.project {
+    flex-direction: column;
+    height: 12.5rem;
+    width: 50%;
+}
+
+.project h2,
+.project p {
+    text-align: left;
+}
+
+.project-image {
+    width: auto;
+}
+
+.project-image img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.tech-stack {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.tech-stack-icon img {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+/* ASIDE */
+
+.statement {
+    flex-direction: column;
+}
+
+.statement p {
+    text-align: center;
+}
+
+
+/* FORM */
+
+.form-map {
+    color: #daded4;
+    background-color: #3c403d;
+    justify-content: space-around;
+    position: relative;
+}
+
+footer>.icons {
+    flex-direction: row;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+}
+
+form {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    flex-direction: column;
+    width: 100%;
+    /* color: #daded4; */
+    /* background-color: #3c403d; */
+}
+
+.contact h1 {
+    width: auto;
+    border-bottom: 0.25rem solid #daded4;
+    color: #daded4;
+    text-transform: capitalize;
+}
+
+.form>.wrapper {
+    flex-direction: column;
+    width: 100%;
+}
+
+.form>.wrapper>.wrapper {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+input,
+.form p,
+textarea {
+    width: 100%;
+    margin: 0.25rem 0;
+}
+
+.form p {
+    display: block;
+    text-align: left;
+}
+
+input:focus:invalid {
+    outline: none;
+    background-color: #FDD;
+}
+
+.error.active {
+    padding: 0.3em 0.3em 0.3em 0;
+    font-size: 80%;
+    color: red;
+}
+
+.map {
+    width: 40%;
+    flex-direction: column;
+}
+
+.map-icon img {
+    height: 12.5rem;
+    width: 12.5rem;
+}
+
+.map-caption p {
+    text-align: center
+}
+
+footer>.wrapper {
+    flex-direction: column;
+}
+
+footer p {
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+footer .icons {
+    flex-direction: row;
+    position: relative;
+    left: auto;
+    z-index: auto;
+}
+
+footer .icons>a {
+    padding: 0 1rem;
+}
