@@ -349,8 +349,8 @@ input:focus:invalid {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2em;
-    padding-bottom: 1em;
+    height: 4em;
+    padding: 1em 0;
     width: 100%;
 }
 
