@@ -45,13 +45,15 @@
                     border-radius: 0.3525rem;
                 }
                 .landing-image {
-                    padding: 0.5rem 0.5rem 0 0.5rem !important;
+                    padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
                     right: -1rem !important;
                     left: auto !important;
                     top: -1rem !important;
                     width: 70% !important;
                     box-shadow: 0.5rem 0.5rem 0 0 !important;
                 }
+                 .image-area {
+                    padding: 0.5rem 0.5rem 0rem 0.5rem !important;}
                 /* SECTION */
                 .services>.wrapper {
                     flex-direction: column;
