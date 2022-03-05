@@ -29,28 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-/* NAV */
-
-nav {
-    position: fixed;
-    z-index: 199;
-    top: 0;
-    left: 0;
-    /* right: 0; */
-    background-color: #A3bcb6;
-    border-bottom: #daded4 1px solid;
-}
-
-.nav {
-    /* padding: 0; */
-}
-
-.email {
-    /* margin: auto 0; */
-    font-weight: bold;
+    /* border: dashed 1px red; */
 }
 
 
@@ -180,7 +159,8 @@ nav {
     height: auto;
     width: 100%;
     background: #A3bcb6;
-    /* color: #daded4; */
+    /* background: #3c403d;
+    color: #daded4; */
     /* background: linear-gradient(182deg, #3c403d 12.5%, white calc(12.5% + 2px) 87.5%, #A3bcb6 calc(87.5% + 2px)); */
 }
 
@@ -231,6 +211,8 @@ nav {
     width: 100%;
     /* background: linear-gradient(179deg, #A3bcb6 20%, white calc(20% + 2px) 85%, #3c403d calc(85% + 2px)); */
     background: #daded4;
+    /* background: #3c403d;
+    color: #daded4; */
     /* color: #daded4; */
 }
 
@@ -276,6 +258,8 @@ nav {
 
 .statement {
     flex-direction: column;
+    /* background: #3c403d;
+    color: #daded4; */
 }
 
 .statement p {
@@ -357,6 +341,23 @@ input:focus:invalid {
 .map {
     width: 40%;
     flex-direction: column;
+}
+
+.email {
+    color: #daded4;
+    background-color: #3c403d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.email img {
+    display: block;
+    height: 100%;
+    width: auto;
 }
 
 .map-icon img {

@@ -15,7 +15,13 @@
          scrollTop: projects
      }, 800);
  });
+ $('#contact-button').on('click', function() {
+     const projects = $('#contact').position().top //Get the  position
 
+     $('html, body').animate({
+         scrollTop: projects
+     }, 800);
+ });
  // Form validation
  const form = document.getElementsByTagName('form')[0];
 
