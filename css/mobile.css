@@ -45,7 +45,7 @@
                     border-radius: 0.3525rem;
                 }
                 .landing-image {
-                    padding: 0.5rem !important;
+                    padding: 0.5rem 0.5rem 0 0.5rem !important;
                     right: -1rem !important;
                     left: auto !important;
                     top: -1rem !important;
