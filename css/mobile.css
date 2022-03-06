@@ -71,6 +71,7 @@
                     .project {
                         height: 100vh !important;
                         width: 100% !important;
+                        justify-content: space-around !important;
                     }
                     /* FORM */
                     .form-map {
