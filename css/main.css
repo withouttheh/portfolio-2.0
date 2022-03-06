@@ -39,16 +39,28 @@ body {
     overflow: hidden;
     position: relative;
     padding: 2rem;
-    height: 99vh;
+    height: 100vh;
     width: 100%;
     background: linear-gradient(178deg, #A3bcb6 70%, #3c403d calc(70% + 2px));
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.logo img {
+    height: 3rem;
+    width: 3rem;
 }
 
 .icons {
     flex-direction: column;
     position: absolute;
     z-index: 99;
-    left: 1rem;
+    left: 0;
 }
 
 .icons img {
@@ -224,13 +236,17 @@ body {
 
 .project {
     flex-direction: column;
-    height: 12.5rem;
+    height: 50vh;
     width: 50%;
+}
+
+.project h2 {
+    padding-bottom: 0.5rem;
 }
 
 .project h2,
 .project p {
-    text-align: left;
+    text-align: center;
 }
 
 .project-image {
@@ -238,8 +254,9 @@ body {
 }
 
 .project-image img {
-    height: 5rem;
-    width: 5rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 10%;
 }
 
 .tech-stack {
@@ -349,8 +366,8 @@ input:focus:invalid {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4em;
-    padding: 1em 0;
+    height: 4rem;
+    padding: 1rem 0;
     width: 100%;
 }
 
@@ -358,6 +375,7 @@ input:focus:invalid {
     display: block;
     height: 100%;
     width: auto;
+    padding-right: 0.2rem;
 }
 
 .map-icon img {
@@ -388,4 +406,8 @@ footer .icons {
 
 footer .icons>a {
     padding: 0 1rem;
+}
+
+small {
+    text-align: center;
 }
