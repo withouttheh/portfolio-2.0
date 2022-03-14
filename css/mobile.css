@@ -82,6 +82,9 @@
   .project p {
     padding: 1rem !important;
   }
+  .project p {
+    height: auto !important;
+  }
   .project > .buttons {
     position: static !important;
     padding: 1rem !important;

@@ -228,13 +228,17 @@ body {
 }
 
 .project h2 {
-  padding-bottom: 0.5rem;
+  /* padding-bottom: 0.5rem; */
 }
 
 .project h2,
 .project p {
   text-align: center;
   padding: 1rem;
+}
+
+.project p {
+  height: 5rem;
 }
 
 .project-image {
