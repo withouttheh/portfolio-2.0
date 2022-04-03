@@ -1,0 +1,95 @@
+    @media only screen and (min-width: 90.0625rem) {
+        body {
+            background-color: snow;
+        }
+        .wrapper {
+            padding: 1rem;
+        }
+        .container {
+            box-shadow: -60px 0 100px -90px #000, 60px 0 100px -90px #000
+        }
+        /* MAIN */
+        .main {
+            padding: 2rem;
+        }
+        .icons img {
+            height: 3rem !important;
+            width: 3rem !important;
+        }
+        .landing-text {
+            width: 40%;
+            height: 70% !important;
+            left: 1rem;
+            top: -1rem;
+            box-shadow: 1rem 1rem 0 0;
+        }
+        .landing-text h1 {
+            font-size: 2.5rem;
+        }
+        .name {
+            font-size: 5rem;
+        }
+        .button {
+            font-size: 1.375rem;
+            margin: 1rem;
+            padding: 0.875rem 1.375rem;
+        }
+        .landing-image {
+            top: 1rem;
+            left: -1rem;
+            width: 40%;
+            height: 70% !important;
+            box-shadow: 1em 1em 0 0;
+        }
+        /* SERVICES SECTION */
+        .heading h1 {
+            width: auto;
+            font-size: 1.375rem !important;
+        }
+        .service-caption h2 {
+            font-size: 1.25rem;
+        }
+        .service-caption p {
+            font-size: 1.125rem;
+        }
+        /* PROJECTS SECTION */
+        .project {
+            justify-content: flex-start !important;
+            width: 50%;
+        }
+        .project h2 {
+            font-size: 1.25rem;
+        }
+        .project p {
+            font-size: 1.125rem;
+            height: 5rem;
+        }
+        /* ASIDE */
+        .statement p {
+            font-size: 1.125rem;
+        }
+        /* FORM */
+        form {
+            width: 40%;
+        }
+        .form p {
+            font-size: 1.25rem;
+        }
+        .map-icon img {
+            height: 12.5rem;
+            width: 12.5rem;
+        }
+        .map-caption p {
+            font-size: 1.25rem;
+        }
+        .email {
+            font-size: 1.25rem;
+        }
+        footer p {
+            width: 100%;
+            font-size: 1.25rem;
+        }
+        small {
+            font-size: 1.125rem;
+        }
+    }

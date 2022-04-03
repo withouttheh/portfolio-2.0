@@ -1,0 +1,52 @@
+ @media only screen and (min-width: 30.0625rem) and (max-width: 48rem) {
+     .wrapper {
+         padding: 1rem;
+     }
+     /* MAIN */
+     .main {
+         padding: 2rem;
+     }
+     .landing-text {
+         width: 35%;
+         left: 1rem;
+         top: -1rem;
+         box-shadow: 1rem 1rem 0 0;
+     }
+     .landing-text h1 {
+         font-size: 1rem;
+     }
+     .name {
+         font-size: 2rem;
+     }
+     .button {
+         font-size: 0.875rem;
+         margin: 0.5rem;
+         padding: 0.4375rem 0.875rem;
+     }
+     .landing-image {
+         top: 1rem;
+         left: -1rem;
+         width: 35%;
+         box-shadow: 1em 1em 0 0;
+     }
+     /* PROJECTS SECTION */
+     .project {
+         justify-content: flex-start !important;
+         width: 50%;
+     }
+     .project p {
+         height: 5rem;
+     }
+     /* FORM */
+     form {
+         width: 40%;
+     }
+     .map-icon img {
+         height: 12.5rem;
+         width: 12.5rem;
+     }
+     footer p {
+         width: 100%;
+         font-size: 1.25rem;
+     }
+ }

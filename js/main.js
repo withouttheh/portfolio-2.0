@@ -1,27 +1,50 @@
  // Smooth scroll down
+ const scrollOffset = 100;
+ const scrollElements = document.querySelectorAll('.js-scroll')
 
- $('#services-button').on('click', function(e) {
-     const services = $('#services').position().top //Get the  position
+ const elementInView = (el, offset = 80) => {
+     const elementTop = el.getBoundingClientRect().top;
 
-     $('html, body').animate({
-         scrollTop: services
-     }, 800);
- });
+     return (elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset))
+ }
 
- $('#projects-button').on('click', function() {
-     const projects = $('#projects').position().top //Get the  position
+ const displayScrollElement = (element) => {
+     element.classList.add('scrolled')
+ }
 
-     $('html, body').animate({
-         scrollTop: projects
-     }, 800);
- });
- $('#contact-button').on('click', function() {
-     const projects = $('#contact').position().top //Get the  position
+ const hideScrollElement = (element) => {
+     element.classList.remove('scrolled')
+     element.style.opacity = 0;
+ }
 
-     $('html, body').animate({
-         scrollTop: projects
-     }, 800);
- });
+ const handleScrollAnimation = () => {
+     scrollElements.forEach((el) => {
+         if (elementInView(el, 80)) {
+
+             displayScrollElement(el)
+         } else {
+             hideScrollElement(el)
+         }
+     })
+ }
+
+ let throttleTimer = false;
+
+ const throttle = (callback, time) => {
+     if (throttleTimer) return
+
+     throttleTimer = true
+
+     setTimeout(() => {
+         callback()
+         throttleTimer = false
+     }, time)
+ }
+
+ window.addEventListener('scroll', () => {
+     throttle(handleScrollAnimation, 250)
+ })
+
  // Form validation
  const form = document.getElementsByTagName('form')[0];
 
@@ -91,4 +114,4 @@
 
  let year = d.getFullYear();
 
- $('.year').text(year);
+ document.querySelector('.year').textContent = year;

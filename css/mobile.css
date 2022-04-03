@@ -1,113 +1,104 @@
-@media only screen and (max-width: 500px) {
-  body {
-    width: 100vw;
-  }
-  /* NAV */
-  nav {
-    display: none;
-  }
-  /* MAIN */
-  .main {
-    flex-direction: column;
-    padding: 0.5rem !important;
-  }
-  .wrapper {
-    padding: 0.5rem !important;
-  }
-  .icons {
-    left: 0 !important;
-  }
-  .landing-text {
-    padding: 0.5rem;
-    left: auto !important;
-    top: 1rem !important;
-    width: 70% !important;
-    box-shadow: 0.5rem 0.5rem 0 0 !important;
-  }
-  .landing-text h1 {
-    font-weight: 800;
-    font-size: 1.5rem !important;
-    letter-spacing: 0.2;
-  }
-  .name {
-    font-size: 1.5em !important;
-  }
-  .angle-bracket {
-    color: #39603d;
-  }
-  .text-area > .buttons {
-    display: none !important;
-  }
-  .button {
-    font-size: 0.75rem !important;
-    margin: 0.25rem !important;
-    padding: 0.3575rem 0.5rem !important;
-    border-radius: 0.3525rem;
-  }
-  .landing-image {
-    padding: 0.5rem !important;
-    right: -1rem !important;
-    left: auto !important;
-    top: -1rem !important;
-    width: 70% !important;
-    box-shadow: 0.5rem 0.5rem 0 0 !important;
-  }
-  .image-area {
-    padding: 0.5rem 0.5rem 0 0.5rem !important;
-  }
-  /* SECTION */
-  .services > .wrapper {
-    flex-direction: column;
-    align-items: center !important;
-  }
-  .service {
-    width: 100% !important;
-  }
-  /* PROJECTS */
-  .projects > .wrapper {
-    flex-direction: column;
-    align-items: center !important;
-  }
-  .project {
-    height: auto !important;
-    width: 100% !important;
-    justify-content: space-around !important;
-    border-bottom: 1px solid#3c403d;
-  }
-
-  .projects > div:nth-child(4) > div:nth-child(2) {
-    border: none !important;
-  }
-  .project h2,
-  .project p {
-    padding: 1rem !important;
-  }
-  .project p {
-    height: auto !important;
-  }
-  .project > .buttons {
-    position: static !important;
-    padding: 1rem !important;
-  }
-  /* ASIDE */
-  .statement {
-    width: 80%;
-    text-align: center;
-    margin: auto;
-  }
-  /* FORM */
-  .form-map {
-    flex-direction: column;
-  }
-  form {
-    width: 90% !important;
-  }
-  .map-icon img {
-    height: 8rem !important;
-    width: 8rem !important;
-  }
-  /* FOOTER */
-  footer p {
-    font-size: 1rem !important;
-  }
+@media only screen and (max-width: 30rem) {
+    body {
+        width: 100vw;
+    }
+    .wrapper {
+        padding: 0.5rem;
+    }
+    /* NAV */
+    nav {
+        display: none;
+    }
+    /* MAIN */
+    .main {
+        flex-direction: column;
+    }
+    .icons {
+        left: 0 !important;
+    }
+    .landing-text {
+        padding: 0.5rem;
+        left: auto;
+        top: 1rem;
+        width: 70%;
+        box-shadow: 0.5rem 0.5rem 0 0;
+    }
+    .landing-text h1 {
+        font-weight: 800;
+        font-size: 1.5rem;
+        letter-spacing: 0.2;
+    }
+    .name {
+        font-size: 1.5em;
+    }
+    .angle-bracket {
+        color: #39603d;
+    }
+    .text-area>.buttons {
+        display: none !important;
+    }
+    .button {
+        font-size: 0.75rem;
+        margin: 0.25rem;
+        padding: 0.3575rem 0.5rem;
+        border-radius: 0.3525rem;
+    }
+    .landing-image {
+        padding: 0.5rem !important;
+        right: -1rem;
+        left: auto;
+        top: -1rem;
+        width: 70%;
+        box-shadow: 0.5rem 0.5rem 0 0;
+    }
+    .image-area {
+        padding: 0.5rem 0.5rem 0 0.5rem !important;
+    }
+    /* SECTION */
+    .services>.wrapper {
+        flex-direction: column;
+        align-items: center !important;
+    }
+    .service {
+        width: 100% !important;
+    }
+    /* PROJECTS */
+    .projects>.wrapper {
+        flex-direction: column;
+        align-items: center !important;
+    }
+    .project {
+        height: auto !important;
+        width: 100%;
+        justify-content: space-around !important;
+        border-bottom: 1px solid #3c403d;
+    }
+    .projects>div:nth-child(4)>div:nth-child(2) {
+        border: none !important;
+    }
+    .project>.buttons {
+        position: static !important;
+        padding: 1rem !important;
+    }
+    /* ASIDE */
+    .statement {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    /* FORM */
+    .form-map {
+        flex-direction: column;
+    }
+    form {
+        width: 90%;
+    }
+    .map-icon img {
+        height: 8rem;
+        width: 8rem;
+    }
+    /* FOOTER */
+    footer p {
+        font-size: 1rem;
+    }
 }
